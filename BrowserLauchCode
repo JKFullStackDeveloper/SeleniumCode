@@ -11,7 +11,7 @@ public class SelBrowserLaunch {
 	public static void main(String[] args) {
 		
 		
-		/*    *************************Opening Browser Method 1 *************************
+		/*    *************************Opening Browser Method 1  through environment variable *************************
 		
 		WebDriver driver = new ChromeDriver();
 		driver.navigate().to("https://www.youtube.com/");
@@ -24,7 +24,7 @@ public class SelBrowserLaunch {
 		
 		*/
 		
-		/* *************************Opening Browser Method 2 *************************
+		/* *************************Opening Browser Method 2   through WebDriverManager Method*************************
 		
 		WebDriverManager.chromedriver().setup();
 		ChromeDriver driver = new ChromeDriver();
@@ -33,7 +33,7 @@ public class SelBrowserLaunch {
 		
 		*/
 		
-		// *************************Opening Browser Method 3 *************************
+		// *************************Opening Browser Method 3 through giving webdriver path *************************
 		
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\juned\\eclipse-workspace\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
