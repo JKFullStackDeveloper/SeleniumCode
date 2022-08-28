@@ -1,59 +1,69 @@
 import org.openqa.selenium.WebDriver;
-
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import org.openqa.selenium.edge.EdgeDriver;
-
-import org.openqa.selenium.firefox.FirefoxDriver;
-
-
-
-public class SelIntroduction {
+//import io.github.bonigarcia.wdm.WebDriverManager;
+//import org.openqa.selenium.edge.EdgeDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 
 
+public class SelBrowserLaunch {
 
-public static void main(String[] args) {
-
-//Invoking Browser
-
-//Chrome - ChromeDriver exten->Methods close get
-
-//Firefox- FirefoxDriver ->methods close get
-
-// WebDriver  close  get
-
-//WebDriver methods + class methods
-
-// Chrome
-
-System.setProperty("webdriver.chrome.driver", "/Users/rahulshetty/Documents/chromedriver");
-
-WebDriver driver = new ChromeDriver();
-
-
-
-//Firefox
-
-System.setProperty("webdriver.gecko.driver", "/Users/rahulshetty/Documents/geckodriver");
-
-WebDriver driver1 = new FirefoxDriver();
-
-//Microsoft Edge
-
-System.setProperty("webdriver.edge.driver", "/Users/rahulshetty/Documents/msedgedriver");
-
-WebDriver driver2 = new EdgeDriver();
-
-driver.get("https://rahulshettyacademy.com");
-
-System.out.println(driver.getTitle());
-
-System.out.println(driver.getCurrentUrl());
-
-driver.close();
-
-//driver.quit();
-
-}
+	public static void main(String[] args) {
+		
+		
+		/*    *************************Opening Browser Method 1 *************************
+		
+		WebDriver driver = new ChromeDriver();
+		driver.navigate().to("https://www.youtube.com/");
+		driver.manage().window().maximize();
+		String title = driver.getTitle();
+		System.out.println(title);
+		String urlname = driver.getCurrentUrl();
+		System.out.println(urlname);
+		driver.close();
+		
+		*/
+		
+		/* *************************Opening Browser Method 2 *************************
+		
+		WebDriverManager.chromedriver().setup();
+		ChromeDriver driver = new ChromeDriver();
+		driver.navigate().to("https://www.amazon.in/");
+		driver.manage().window().maximize();
+		
+		*/
+		
+		// *************************Opening Browser Method 3 *************************
+		
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\juned\\eclipse-workspace\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.amazon.in/");
+		driver.manage().window().maximize();
+		driver.close();
+			
+		
+		
+		
+		/*	***************************************Opening firefox Browser**************************
+		
+		WebDriver driver1 = new FirefoxDriver();
+		driver1.get("https://www.flipkart.com/");
+		driver1.close();
+		
+		*/
+		
+		/*	***************************************Opening Edge Browser**************************
+		
+		System.setProperty("webdriver.edge.driver","C:\\Users\\juned\\eclipse-workspace\\msedgedriver.exe");
+		WebDriver driver = new EdgeDriver();
+		driver.get("https://www.amazon.in/");
+		String title = driver.getTitle();
+		String urlname = driver.getCurrentUrl();
+		System.out.println(title);
+		System.out.println(urlname);
+		
+		*/
+		
+	}
 
 }
