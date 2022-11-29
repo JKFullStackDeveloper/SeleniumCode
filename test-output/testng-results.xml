@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-14T19:08:07 IST" name="Default suite" finished-at="2022-11-14T19:08:15 IST" duration-ms="8687">
+    <groups>
+    </groups>
+    <test started-at="2022-11-14T19:08:07 IST" name="Default test" finished-at="2022-11-14T19:08:15 IST" duration-ms="8687">
+      <class name="FrameworkDesign.LoginEcom">
+        <test-method is-config="true" signature="ReportConfig()[pri:0, instance:FrameworkDesign.LoginEcom@3e11f9e9]" started-at="2022-11-14T19:08:07 IST" name="ReportConfig" finished-at="2022-11-14T19:08:07 IST" duration-ms="632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReportConfig -->
+        <test-method signature="loginForm()[pri:0, instance:FrameworkDesign.LoginEcom@3e11f9e9]" started-at="2022-11-14T19:08:07 IST" name="loginForm" finished-at="2022-11-14T19:08:15 IST" duration-ms="7996" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginForm -->
+      </class> <!-- FrameworkDesign.LoginEcom -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
